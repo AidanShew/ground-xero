@@ -6,7 +6,7 @@
   "name":"section_two",
   "parent":{
     "name":"Trio",
-    "path":"folders/Scripts/Campaign/Mission One/Trio.yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Trio.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@ if (!spawned) {
 	//create_single_spiral();
 	spawned=true;
 }
-tracer_section();
+create_tracer_section();
 //create_pack();
 //create_helix();
 /*

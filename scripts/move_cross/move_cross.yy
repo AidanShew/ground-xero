@@ -6,7 +6,7 @@
   "name":"move_cross",
   "parent":{
     "name":"Cross",
-    "path":"folders/Scripts/Campaign/Mission One/Cross.yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Cross.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

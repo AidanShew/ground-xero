@@ -6,7 +6,7 @@
   "name":"move_revolver",
   "parent":{
     "name":"Revolver",
-    "path":"folders/Scripts/Campaign/Mission One/Revolver.yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Revolver.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

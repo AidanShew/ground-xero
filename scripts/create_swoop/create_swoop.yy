@@ -6,7 +6,7 @@
   "name":"create_swoop",
   "parent":{
     "name":"Swoop",
-    "path":"folders/Scripts/Campaign/Mission One/Swoop.yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Swoop.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

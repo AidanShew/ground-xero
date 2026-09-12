@@ -6,7 +6,7 @@
   "name":"move_pack_left",
   "parent":{
     "name":"Pack",
-    "path":"folders/Scripts/Campaign/Mission One/Pack.yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Pack.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

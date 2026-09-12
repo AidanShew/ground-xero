@@ -47,8 +47,8 @@ if (keyboard_check(vk_up)&&fire_counter>=fire_limit&&!megadrive) {
 		bullet.left=i==1 ? true : false;
 	}
 	
-	fire_sound= red ? choose(FireDeep1, FireDeep2, FireDeep3) : choose(Fire0, Fire1, Fire2);
-	audio_play_sound(fire_sound, 1, false);
+	//fire_sound= red ? choose(FireDeep1, FireDeep2, FireDeep3) : choose(Fire0, Fire1, Fire2);
+	//audio_play_sound(fire_sound, 1, false);
 	fire_counter=0;
 }
 

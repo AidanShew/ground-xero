@@ -24,7 +24,7 @@ switch (section) {
 	break;
 	
 	case SECTION.SEVEN:
-	tracer_section();
+	tracer_section1();
 	show_debug_message("Spawn Timer: "+string(spawn_timer));
 	break;
 	

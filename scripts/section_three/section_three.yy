@@ -6,7 +6,7 @@
   "name":"section_three",
   "parent":{
     "name":"Helix (Figure Eight)",
-    "path":"folders/Scripts/Campaign/Mission One/Helix (Figure Eight).yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Helix (Figure Eight).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

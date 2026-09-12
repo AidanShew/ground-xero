@@ -2,11 +2,8 @@ event_inherited();
 
 depth=-99;
 
-enemy_health=35;
+enemy_health=1;
 move_speed = 10;
-
-wave_amplitude = 60;   //Width of wave
-wave_frequency = 0.1;  //Speed of oscillation
 
 fire_counter=0;
 

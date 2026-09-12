@@ -6,7 +6,7 @@
   "name":"move_single_spiral",
   "parent":{
     "name":"Single Spiral",
-    "path":"folders/Scripts/Campaign/Mission One/Single Spiral.yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Single Spiral.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

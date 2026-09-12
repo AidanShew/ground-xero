@@ -6,7 +6,7 @@ cross_polarity_timer=30;
 cross_polarity=false; //false is blue, true is red.
 
 helix_spawn_timer=120;
-tracer_section_spawn_timer=2000;
+tracer_spawn_timer=2000;
 spawn_timer2=120;
 
 pack_spawn_timer=120;

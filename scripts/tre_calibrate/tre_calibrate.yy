@@ -6,7 +6,7 @@
   "name":"tre_calibrate",
   "parent":{
     "name":"Uncatagorized",
-    "path":"folders/Scripts/Campaign/Mission One/Uncatagorized.yy",
+    "path":"folders/Scripts/Campaign/Campaign Moves/Uncatagorized.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

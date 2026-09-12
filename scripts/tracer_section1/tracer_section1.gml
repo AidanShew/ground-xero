@@ -1,4 +1,5 @@
-function tracer_section(){
+function tracer_section1(){
+	/*
 	if (tracer_section_spawn_timer%500==0) spawned=false;
 
 	if (--tracer_section_spawn_timer>0&&tracer_section_spawn_timer%5==0) {
@@ -116,5 +117,5 @@ function tracer_section(){
 			section=SECTION.EIGHT;
 		}
 	}	
-
+*/
 }
