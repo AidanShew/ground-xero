@@ -2,7 +2,7 @@ depth=1;
 
 left=true;
 
-section=SECTION.ONE;
+section=1;
 
 global.enemies_off_screen=0;
 

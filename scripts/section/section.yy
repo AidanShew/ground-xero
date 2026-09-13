@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"section_three",
+  "%Name":"section",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"section_three",
+  "name":"section",
   "parent":{
     "name":"Helix (Figure Eight)",
     "path":"folders/Scripts/Campaign/Campaign Moves/Helix (Figure Eight).yy",

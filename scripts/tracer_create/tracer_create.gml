@@ -1,9 +1,30 @@
-function tracer_create(move_type, red=noone){	
-	for (var i=0; i<2; i++) {
+function tracer_create(move_type, amount=2, red=noone){	
+	for (var i=0; i<amount; i++) {		
+		//Enemy creation
 		var enemy=instance_create_layer(0, 0, "Instances", obj_tracer);
+		
+		//Assigns alignment (left or right of the wave)
+		if (amount!=1) {
+			enemy.alignment= i==1 ? TRACER_ALIGN.RIGHT : TRACER_ALIGN.LEFT;
+		}
+		
+		//If there's only one, it will align closer to the wall of the room.
+		else {
+			if (move_type==TRACER_MOVE.FROM_TOP_RIGHT) {
+				enemy.alignment=TRACER_ALIGN.RIGHT;
+			}
+			else if (move_type==TRACER_MOVE.FROM_TOP_LEFT) {
+				enemy.alignment=TRACER_ALIGN.LEFT;
+			}
+		}
+		
+		//Move type is assigned from input
 		enemy.move_type=move_type;
+		
+		//Red value is assigned from input
 		enemy.red=red;
-		enemy.alignment= i==1 ? TRACER_ALIGN.RIGHT : TRACER_ALIGN.LEFT;
+		
+
 		
 		switch (move_type) {
 			case TRACER_MOVE.FROM_BOTTOM_CENTER:
@@ -51,7 +72,7 @@ function tracer_create(move_type, red=noone){
 				enemy.x=xstart;
 			
 				enemy.ystart = -50;
-				enemy.y = ystart;
+				enemy.y = -50;
 			
 				enemy.image_angle = 270;
 			break;

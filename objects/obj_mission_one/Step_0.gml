@@ -1,34 +1,37 @@
 switch (section) {
-	case SECTION.ONE:
-	section_one();
+	case (1):
+	section(create_swoop);
 	break;
 	
-	case SECTION.TWO:
-	section_two();
+	case (2):
+	section(create_trio);
 	break;
 	
-	case SECTION.THREE:
-	section_three();
+	case (3):
+	section(create_helix);
 	break;
 	
-	case SECTION.FOUR:
-	create_double_spiral();
+	case (4):
+	section(create_cross);
 	break;
 	
-	case SECTION.FIVE:
-	create_cross();
+	case (5):
+	section(create_circuit);
 	break;
 	
-	case SECTION.SIX:
-	create_circuit();
+	case (6):
+	section(create_single_spiral);
 	break;
 	
-	case SECTION.SEVEN:
-	tracer_section1();
-	show_debug_message("Spawn Timer: "+string(spawn_timer));
+	case (7):
+	section(create_revolver);
 	break;
 	
-	case SECTION.EIGHT:
-	treclops_create();
+	case (8):
+	section(create_pack);
+	break;
+	
+	case (9):
+	section(create_tracer_section);
 	break;
 }

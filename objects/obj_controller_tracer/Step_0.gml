@@ -1,55 +1,55 @@
 switch (tracer_phase) {
-	case (10):
+	case (1):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 			tracer_create(TRACER_MOVE.FROM_TOP_CENTER);
 		}
 	break;
 	
-	case (9):
+	case (2):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 			tracer_create(TRACER_MOVE.FROM_TOP_LEFT);
 		}
 	break;
 	
-	case (8):
+	case (3):
 	if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 		tracer_create(TRACER_MOVE.FROM_TOP_RIGHT);
 	}
 	break;
 	
-	case (7):
+	case (4):
 	if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 		tracer_create(TRACER_MOVE.FROM_BOTTOM_CENTER);
 	}
 	break;	
 	
-	case (6):
+	case (5):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 			tracer_create(TRACER_MOVE.FROM_BOTTOM_LEFT);
 		}
 	break;	
 	
-	case (5):
+	case (6):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
-			tracer_create(TRACER_MOVE.FROM_BOTTOM_CENTER);
+			tracer_create(TRACER_MOVE.FROM_BOTTOM_RIGHT);
 		}
 	break;	
 	
-	case (4):
+	case (7):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 			tracer_create(TRACER_MOVE.FROM_BOTTOM_LEFT);
 			tracer_create(TRACER_MOVE.FROM_TOP_CENTER);
 		}
 	break;	
 
-	case (3):
+	case (8):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 			tracer_create(TRACER_MOVE.FROM_TOP_LEFT);
 			tracer_create(TRACER_MOVE.FROM_BOTTOM_RIGHT);
 		}
 	break;	
 	
-	case (2):
+	case (9):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
 			tracer_create(TRACER_MOVE.FROM_BOTTOM_LEFT);
 			tracer_create(TRACER_MOVE.FROM_TOP_CENTER);
@@ -57,22 +57,22 @@ switch (tracer_phase) {
 		}
 	break;	
 	
-	case (1):
+	case (10):
 		if (tracer_spawn_timer>0 && tracer_spawn_timer%5==0) {
-			tracer_create(TRACER_MOVE.FROM_BOTTOM_LEFT);
-			tracer_create(TRACER_MOVE.FROM_TOP_CENTER);
-			tracer_create(TRACER_MOVE.FROM_BOTTOM_RIGHT);
+			tracer_create(TRACER_MOVE.FROM_TOP_LEFT, 1);
+			tracer_create(TRACER_MOVE.FROM_TOP_RIGHT, 1);
 		}
-	break;		
-	
-	case (0):
-	instance_destroy();
+	break;
+		
+	case (11):
+		instance_destroy();
 	break;
 }
 
-if (--tracer_spawn_timer <=0) {
-	tracer_phase--;
+if (--tracer_spawn_timer <=-60) {
+	tracer_phase++;
 	tracer_spawn_timer=120;
 }
 
 show_debug_message("Tracer Phase: "+string(tracer_phase));
+show_debug_message("Tracer Spawn Timer: "+string(tracer_spawn_timer));

@@ -8,8 +8,6 @@ switch(move_type) {
 	case TRACER_MOVE.FROM_BOTTOM_LEFT:
 	case TRACER_MOVE.FROM_BOTTOM_RIGHT:
 	y-=move_speed;
-	show_debug_message("YStart: "+string(ystart));
-	show_debug_message("Y: "+string(y));
 	break;
 	
 	case TRACER_MOVE.FROM_LEFT:
