@@ -1,37 +1,46 @@
 switch (section) {
 	case (1):
-	section(create_swoop);
+		create_swoop();
+		if (swoop_spawn_timer<=0) section++;
 	break;
 	
 	case (2):
-	section(create_trio);
+		if (!trio_spawned) {
+			create_trio();
+		}
+		else if (!instance_exists(obj_controller_trio)) {
+			section++;
+		}
 	break;
 	
 	case (3):
-	section(create_helix);
+		create_helix();
+		if (helix_spawn_timer<=0) section++;
 	break;
 	
 	case (4):
-	section(create_cross);
+		create_cross();
+		if (cross_spawn_timer<=0) section++;
 	break;
 	
 	case (5):
-	section(create_circuit);
+		create_circuit();
+		if (circuit_spawn_timer<=0) section++;
 	break;
 	
 	case (6):
-	section(create_single_spiral);
+		create_single_spiral(); //Needs exit
 	break;
 	
 	case (7):
-	section(create_revolver);
+		create_revolver(); //Needs exit
 	break;
 	
 	case (8):
-	section(create_pack);
+		create_pack(); //Might need exit? Idk
 	break;
 	
 	case (9):
-	section(create_tracer_section);
+		create_tracer_section(); //Keeps looping to the beginning after iterating completely
 	break;
 }

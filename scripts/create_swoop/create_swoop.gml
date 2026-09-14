@@ -3,7 +3,7 @@ function create_swoop(){
 	---INSTRUCTIONS---
 	*If swoop_spawn_timer doesn't exist, create it and set it to 90.
 	*swoop_create() should be placed in the step function since it 
-	will automatically iterating when it's finished.
+	will automatically stop iterating when it's finished.
 	
 	---ABOUT---
 	*Both Swoop Left and Swoop Right Soldiers are assied with move_swoop(),
@@ -15,13 +15,16 @@ function create_swoop(){
 	and same respectively for Swoop Left.
 	*/
 		
-	if (swoop_spawn_timer==80||swoop_spawn_timer==60||swoop_spawn_timer==40||swoop_spawn_timer==20||swoop_spawn_timer==0) {
-		soldier_create(1, MOVE.SWOOP_LEFT);
-	}
+	var timer = swoop_spawn_timer;
+	if (timer>0) {
+		if (timer==80||timer==60||timer==40||timer==20||timer==0) {
+			soldier_create(1, MOVE.SWOOP_LEFT);
+		}
 	
-	if (swoop_spawn_timer==90||swoop_spawn_timer==70||swoop_spawn_timer==50||swoop_spawn_timer==30||swoop_spawn_timer==10) {
-		soldier_create(1, MOVE.SWOOP_RIGHT);
+		if (timer==90||timer==70||timer==50||timer==30||timer==10) {
+			soldier_create(1, MOVE.SWOOP_RIGHT);
+		}
 	}
-
 	swoop_spawn_timer--;
+	show_debug_message("Timer: "+string(timer));
 }

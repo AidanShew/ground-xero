@@ -17,14 +17,4 @@ function create_circuit() {
 	(timer<0) ? 20 : 15);
 	
 	circuit_spawn_timer--;
-	
-	/*
-	if (global.enemies_off_screen >= 20) {
-		global.enemies_off_screen=0;
-		circuit_spawn_timer=2000;
-		spawned=false;
-		show_debug_message("End of Section 7...\nGoing to Section 8");
-		section=SECTION.SEVEN;
-	}
-	*/
 }

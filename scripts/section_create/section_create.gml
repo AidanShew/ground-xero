@@ -1,4 +1,4 @@
-function section(section_script){
+function section_create(section_script){
 	section_script();
 	show_debug_message("Enemies Off Screen: "+string(global.enemies_off_screen));
 	

@@ -5,13 +5,15 @@ function create_helix(){
 	number greater than 20, recommended to be 90.
 	*/
 	//Set helix_spawn_timer to 90
-	if (helix_spawn_timer>=0) {
-		if (helix_spawn_timer%20==0) {
+	
+	var timer = helix_spawn_timer;
+	
+	if (--timer>=0) {
+		if (timer%20==0) {
 			soldier_create(1, MOVE.HELIX_RIGHT);
 		}
-		if (helix_spawn_timer%20==10) {
+		if (timer%20==10) {
 			soldier_create(1, MOVE.HELIX_LEFT);
 		}
-		helix_spawn_timer--;
 	}
 }

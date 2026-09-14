@@ -14,7 +14,7 @@ if (go==true) {
 					room_goto(rm_horde);
 					break;
 				case ("story"):
-					room_goto(rm_cutscene_intro);
+					room_goto(rm_mission_one);
 					break;
 			}
 			instance_destroy();
