@@ -19,6 +19,7 @@ trio_spawned = false //Indicates that trio has started once.
 swoop_spawn_timer = 90; //Required For create_swoop()
 helix_spawn_timer = 90; //Required For create_helix()
 cross_spawn_timer = 120; //Required for create_cross()
+cross_polarity_timer = 30;
 circuit_spawn_timer = 600; //Required for create_circuit()
 //Required for create_pack();
 pack_spawn_timer = 120;

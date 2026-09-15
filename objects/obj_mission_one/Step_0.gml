@@ -1,21 +1,22 @@
 switch (section) {
 	case (1):
 		create_swoop();
-		if (swoop_spawn_timer<=0) section++;
+		if (swoop_spawn_timer<=-30) section++;
 	break;
 	
 	case (2):
 		if (!trio_spawned) {
 			create_trio();
+			trio_spawned=true;
 		}
-		else if (!instance_exists(obj_controller_trio)) {
+		else if (trio_spawned&&!instance_exists(obj_controller_trio)) {
 			section++;
 		}
 	break;
 	
 	case (3):
 		create_helix();
-		if (helix_spawn_timer<=0) section++;
+		if (helix_spawn_timer<=-180) section++;
 	break;
 	
 	case (4):

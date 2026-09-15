@@ -80,6 +80,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			
 			case (MOVE.CROSS_LEFT):
 			case (MOVE.CROSS_RIGHT):
+			enemy.controller=self;
 			enemy.y=move_type==MOVE.CROSS_LEFT ? -50 : -100;
 			enemy.x=(room_width/2);
 			enemy.red=red;
@@ -288,7 +289,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			break;
 						
 			case (MOVE.TRIO):
-			enemy.controller=self;
+			enemy.controller=obj_controller_trio;
 			
 			if (i==3) { //Left
 				enemy.orbit_angle=180;

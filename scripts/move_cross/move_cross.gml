@@ -1,5 +1,5 @@
 function move_cross() {
-	var polarity = obj_playground.cross_polarity_timer>=0 ? true /*Majority Blue*/: false /*Majority Red*/;
+	var polarity = controller.cross_polarity_timer>=0 ? true /*Majority Blue*/: false /*Majority Red*/;
 	image_angle=direction;
 	
 	if (y>100) {

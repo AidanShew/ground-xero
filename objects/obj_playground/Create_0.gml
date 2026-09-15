@@ -23,4 +23,4 @@ global.enemies_off_screen=0;
 
 spawned=false;
 
-//create_move_trio();
+//create_trio();

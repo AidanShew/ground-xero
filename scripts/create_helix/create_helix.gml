@@ -6,9 +6,11 @@ function create_helix(){
 	*/
 	//Set helix_spawn_timer to 90
 	
+	helix_spawn_timer--;
+	
 	var timer = helix_spawn_timer;
 	
-	if (--timer>=0) {
+	if (timer>=0) {
 		if (timer%20==0) {
 			soldier_create(1, MOVE.HELIX_RIGHT);
 		}

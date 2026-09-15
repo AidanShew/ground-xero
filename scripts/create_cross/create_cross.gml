@@ -6,5 +6,6 @@ function create_cross(){
 		soldier_create(1, MOVE.CROSS_RIGHT, noone, false);
 		soldier_create(1, MOVE.CROSS_LEFT, noone, true);
 	}
-	timer--;
+	
+	cross_spawn_timer--;
 }

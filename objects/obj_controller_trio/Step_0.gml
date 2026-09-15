@@ -13,21 +13,25 @@ if (instance_exists(obj_enemy_soldier)) {
 		
 		speed=0;
 		if (revolver_timer>0) {
-			with (obj_enemy_soldier) fire= rotation_order=0;
+			with (obj_enemy_soldier) {
+				if (move_type==MOVE.TRIO) fire= rotation_order=0;
+			}
 			if (array_length(revolver_soldiers)>1) revolver_timer--;
 		}
 		else {
 			with (obj_enemy_soldier) {
-				fire=false;
-				orbit_offset+=min(orbit_speed, 90 - orbit_offset);
-				if (orbit_offset>=90) {
-					other.revolver_timer=20;
-					orbit_offset=0;
-					rotation_order=(rotation_order+1) mod 4;
+				if (move_type==MOVE.TRIO) {
+					fire=false;
+					orbit_offset+=min(orbit_speed, 90 - orbit_offset);
+					if (orbit_offset>=90) {
+						other.revolver_timer=20;
+						orbit_offset=0;
+						rotation_order=(rotation_order+1) mod 4;
+					}
+					orbit_angle+=orbit_speed;
+					x= controller.x + (lengthdir_x(75, orbit_angle));
+					y= controller.y + (lengthdir_y(75, orbit_angle));
 				}
-				orbit_angle+=orbit_speed;
-				x= controller.x + (lengthdir_x(75, orbit_angle));
-				y= controller.y + (lengthdir_y(75, orbit_angle));
 			}
 		}
 	}

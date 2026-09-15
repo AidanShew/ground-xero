@@ -4,9 +4,10 @@ if (!spawned) {
 	//create_cross();
 	//create_revolver();
 	//create_single_spiral();
+	create_trio();
 	spawned=true;
 }
-create_tracer_section();
+//create_tracer_section();
 //create_pack();
 //create_helix();
 /*
